@@ -3,11 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32413.511
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryArea", "LibraryArea\LibraryArea.csproj", "{86D4F8AE-483F-46AD-9ACD-923F584F1877}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryArea", "LibraryArea\LibraryArea.csproj", "{86D4F8AE-483F-46AD-9ACD-923F584F1877}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FigureAreaTest", "FigureAreaTest\FigureAreaTest.csproj", "{7A7337FC-1A31-4442-8059-84F06AA483BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FigureAreaTest", "FigureAreaTest\FigureAreaTest.csproj", "{7A7337FC-1A31-4442-8059-84F06AA483BF}"
 	ProjectSection(ProjectDependencies) = postProject
 		{86D4F8AE-483F-46AD-9ACD-923F584F1877} = {86D4F8AE-483F-46AD-9ACD-923F584F1877}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQLQuery", "SQLQuery", "{561F29F3-3F32-4F94-9ABE-E2E8C36654D4}"
+	ProjectSection(SolutionItems) = preProject
+		SQLQueryListProducts.sql = SQLQueryListProducts.sql
 	EndProjectSection
 EndProject
 Global
