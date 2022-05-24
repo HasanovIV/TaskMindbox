@@ -1,7 +1,11 @@
-Use AdventureWorks2012
 
-SELECT Product.Name AS [Name product], ProductCategory.Name AS [Name category]
+SELECT Product.Name AS [Name product], MatchingCategory.Name AS [Name category]
 FROM Production.Product AS Product
-LEFT JOIN Production.ProductCategory AS ProductCategory
-ON Product.ProductSubcategoryID = ProductCategory.ProductCategoryID
+LEFT JOIN 
+	
+	(SELECT ProductCategory.Name as Name, MatchingCategory.ProductID as ProductID
+	FROM Production.MatchingCategory AS MatchingCategory
+	LEFT JOIN Production.ProductCategory AS ProductCategory
+	ON MatchingCategory.ProductSubcategoryID = ProductCategory.ProductCategoryID) AS MatchingCategory
 
+ON Product.ID = MatchingCategory.ProductID
