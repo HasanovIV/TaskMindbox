@@ -5,7 +5,7 @@ LEFT JOIN
 	
 	(SELECT ProductCategory.Name as Name, MatchingCategory.ProductID as ProductID
 	FROM Production.MatchingCategory AS MatchingCategory
-	LEFT JOIN Production.ProductCategory AS ProductCategory
+	INNER JOIN Production.ProductCategory AS ProductCategory
 	ON MatchingCategory.ProductSubcategoryID = ProductCategory.ProductCategoryID) AS MatchingCategory
 
 ON Product.ID = MatchingCategory.ProductID
