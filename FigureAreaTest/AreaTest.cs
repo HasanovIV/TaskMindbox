@@ -1,6 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using LibraryArea;
 using System;
+using LibraryArea.Figures;
 
 namespace FigureAreaTest
 {
@@ -47,7 +48,7 @@ namespace FigureAreaTest
 
             bool expected = true;
 
-            bool result = FigureArea.RightTriangle(sideA, sideB, sideC);
+            bool result = RightTriangle.IsRightTriangle(sideA, sideB, sideC);
 
             Assert.IsTrue(result, string.Format("Expected for '{0}': false; Actual: {1}",
                                      expected, result));
@@ -63,7 +64,7 @@ namespace FigureAreaTest
             // expected = false
             bool expected = true;
 
-            bool result = FigureArea.RightTriangle(sideA, sideB, sideC);
+            bool result = RightTriangle.IsRightTriangle(sideA, sideB, sideC);
 
             Assert.AreNotEqual(result, string.Format("Expected for '{0}': false; Actual: {1}",
                                      expected, result));
