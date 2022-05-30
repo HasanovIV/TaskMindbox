@@ -1,3 +1,4 @@
+
 SELECT Product.Name AS [Name product], MatchingCategory.Name AS [Name category]
 FROM Production.Product AS Product
 LEFT JOIN 
